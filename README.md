@@ -10,5 +10,5 @@ Simply run index.html in your browser
 ### License
 
 ### Credits
-Landon
+Landon, TeamTreeHouse
 
