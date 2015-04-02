@@ -1,9 +1,22 @@
-//Setting the initial score
-//
-var totalScore = 0;
-//
-//Begin Questionnaire
+//Setting the up the user profile and scoreboard
+function Player(name) {
+   this.name = name;
 
+ };
+
+var totalScore = function
+
+(function() {
+    var Player = function(name) {
+      this.name = name;
+      this.getPlayer = function() {
+        return this.name;
+      };
+      this.set = function(name) {
+        this.name = name;
+      };
+    };
+//
 // Start: #1
 var answer1 = prompt("Name a programming language that's also a gem?");
 if (answer1.toUpperCase() === 'RUBY') {
@@ -55,5 +68,5 @@ if (answer5.toUpperCase() === 'JAVASCRIPT') {
 if (correct > 3){
   alert('The world shudders with awe in the wake of your triumph!');
 } else {
-  alert('The world shudders in abject horror from your performance.' + score + ' is not passing.')
+  alert('The world shudders in abject horror from your dalliance with ignorance.' + score + ' is not passing.')
 }
