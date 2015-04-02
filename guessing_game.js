@@ -1,26 +1,42 @@
-//Setting the up the user profile and scoreboard
-function Player(name) {
-   this.name = name;
+/*
++===========================================+
+| Version 1.3                               |
+| Added object constructor for new player   |
+| creation, which in turn tracks their      |
+| score as they progress through the game.  |
+|                                           |
++-=========================================-+
+*/
+//Setting the up the user name and scoreboard
+function Player (name, totalScore) {
+  this.name       = name;
+  this.totalScore = totalScore;
+  totalScore      = 0;
+  };
+  Player.ranking  = function() {
+    return this.totalScore - totalQuestions;
+  }
+};
 
- };
+var totalScore     = 0;
+var totalQuestions = 5;
+var newPlayer1     = new Player(prompt('Desired player name'));
 
-var totalScore = function
+/*
+var Player.name = function () {
+  var answer = prompt();
+  if (answer.toUpperCase === 'YES') {
 
-(function() {
-    var Player = function(name) {
-      this.name = name;
-      this.getPlayer = function() {
-        return this.name;
-      };
-      this.set = function(name) {
-        this.name = name;
-      };
-    };
+  }
+}
+*/
+
+document.write("Welcome, " + newPlayer1.name);
 //
 // Start: #1
 var answer1 = prompt("Name a programming language that's also a gem?");
 if (answer1.toUpperCase() === 'RUBY') {
-  totalScore += 1;
+  Player.totalScore++;
 } else {
   alert('That\'s wrong!');
 }
@@ -29,7 +45,7 @@ if (answer1.toUpperCase() === 'RUBY') {
 // Start: #2
 var answer2 = prompt("Name a programming language that's also a reptile?")
 if (answer2.toUpperCase() === 'PYTHON'){
-  totalScore += 1;
+  Player.totalScore++;
 } else {
   alert('That\'s wrong!');
 }
@@ -39,7 +55,7 @@ if (answer2.toUpperCase() === 'PYTHON'){
 var answer3 = prompt("What language do you use to style web pages?");
 
 if (answer3.toUpperCase() === 'CSS') {
-  totalScore += 1;
+  Player.totalScore++;
 } else {
   alert('That\'s wrong!');
 }
@@ -49,7 +65,7 @@ if (answer3.toUpperCase() === 'CSS') {
 var answer4 = prompt("What language do you use to create structure in your web pages?");
 
 if (answer4.toUpperCase() === 'HTML') {
-  totalScore += 1;
+  Player.totalScore++;
 } else {
   alert('That\'s wrong!');
 }
@@ -58,15 +74,15 @@ if (answer4.toUpperCase() === 'HTML') {
 // Start: #5
 var answer5 = prompt("What langauge do you use to create interactivity into your web pages?");
 if (answer5.toUpperCase() === 'JAVASCRIPT') {
-  totalScore += 1;
+  Player.totalScore++;
 } else {
   alert('That\'s wrong!');
 }
 // End: #5
 
 // Results of totalScore
-if (correct > 3){
+if (Player.totalScore >= 3){
   alert('The world shudders with awe in the wake of your triumph!');
 } else {
-  alert('The world shudders in abject horror from your dalliance with ignorance.' + score + ' is not passing.')
+  alert('The world shudders in abject horror from your dalliance with ignorance.' + totalScore.Player + ' is not passing.')
 }

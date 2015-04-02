@@ -1,18 +1,14 @@
-# Guessing Game
-```sh
-$ Five Answers.
-$ No time limit.
-$ Pass or Fail.
-$ No fucks given.
+# Acuminous Language Proctor
+```
+Test your working knowledge of various programming languages and their uses!
 ```
 
-
 ### Version
-
+1.3
 ### Installation
+Simply run index.html in your browser
+### License
 
-### Liscense
-
-### Credit
-
+### Credits
+Landon, TeamTreeHouse
 
