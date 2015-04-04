@@ -1,8 +1,8 @@
 # Acuminous Language Proctor
 ====
-```
-Test your working knowledge of various programming languages and their uses!
-```
+
+_Test your working knowledge of various programming languages and their uses!_
+
 ### Change Log v 1.32
 
 	* Organization of elements within guessing_game.js
@@ -14,12 +14,12 @@ Test your working knowledge of various programming languages and their uses!
 
 ### Version
 1.32
-### Installation
+#### Installation
 * Place all files in the same directory.
 * Simply run index.html in your browser
 * .. and presto!
-### License
+##### License
 Creative Commons
-### Credits
+###### Credits
 Claudia, Landon, TeamTreeHouse
 
