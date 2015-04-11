@@ -5,30 +5,26 @@
     <link rel="stylesheet" type="text/css" href="guessing_game.css">
   </head>
   <body>
-    <header id= "givemespace">
-      <h4><center> CODE FELLOW's</center></h4> <hr width=100px><br>
-      <h1><center><marquee width="50" height="35" style="border:solid 3px">Acuminous-Language-Proctor</marquee></center></h1>
-      <h5><center>by ARISTIDE TOSI</center></h5>
+    <header role="intro" id= "titlePage">
+
+      <h2><center> CODE FELLOW's</center></h2> <hr width=100px><br>
+      <h1><center><marquee width="50" height="50" style="border:solid 3px">Acuminous-Language-Proctor</marquee></center></h1>
+      <h3><center>by ARISTIDE TOSI</center></h3>
 
     </header>
     <main>
-      <aside>
-        <form name = "Player.totalScore">
-          <label for = "player-name"> Player Name</label>
-          <input type = "text" id = "player-name" name = "player-name" placeholder ="By what name are you called?">
+      <h1 id="questionStage"></h1><br>
 
-          <button type="submit">Begin Acuminous</button>
-        </form>
-        <div class="container">
-          <form name = "Player.name">
-            <label for = "player-name"> Player Name</label>
-            <input type = "text" id = "player-name" name = "player-name" placeholder ="By what name are you called?">
-            <button type="submit">Begin Acuminous</button>
-          </form>
+
+      <span class="contentBlock" class="contentBlock">
+      <input type="text" id="GameTextArea" placeholder="Write your answer here"></input>
+      <button onclick="newPlayer.checkAnswer()">Submit</button>
+      </span>
+
         </div>
-      </aside>
+ <aside><div id="scoreBoard"></div><div id="questions"></aside>
     </main>
-    <footer></footer>
-    <script src="tosi.js"></script>
+    <footer><h2></h2></footer>
+    <script src="guessing_game.js"></script>
   </body>
 </html>
