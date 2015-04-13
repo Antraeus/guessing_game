@@ -1,4 +1,42 @@
+<!-- Here's how I would structure your HTML. You original is commented out below.
+Remember that you should not use any styling features or tags in your HTML. You have a CSS
+stylesheet linked here, and should be using that.
+
+Also, you should not be calling functions from HTML. Use your JS event handlers. My
+version of your HTML will not work for you at this point because I removed the call.-->
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Acuminous Language Proctor</title>
+  <link rel="stylesheet" type="text/css" href="guessing_game.css">
+</head>
+<body>
+  <header role="intro" id= "titlePage">
+    <h2>CODE FELLOW's</h2>
+    <h1>Acuminous-Language-Proctor</h1>
+    <h3>by ARISTIDE TOSI</h3>
+  </header>
+  <main>
+    <h1 id="questionStage"></h1>
+    <span class="contentBlock" class="contentBlock">
+      <input type="text" id="GameTextArea" placeholder="Write your answer here"></input>
+      <button id="submit">Submit</button>
+    </span>
+    <aside>
+      <div id="scoreBoard"></div>
+      <div id="questions"></div>
+    </aside>
+  </main>
+  <footer>
+    <h2></h2>
+  </footer>
+  <script src="guessing_game.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Acuminous Language Proctor</title>
@@ -27,4 +65,4 @@
     <footer><h2></h2></footer>
     <script src="guessing_game.js"></script>
   </body>
-</html>
+</html> -->
