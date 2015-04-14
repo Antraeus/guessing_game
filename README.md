@@ -3,6 +3,11 @@
 
 _Test your working knowledge of various programming languages and their uses!_
 
+### Change Log v 1.40
+*  Added DOM elements
+*  DOM elements now respond and update, moving along an array after a question is successfully answered.
+*  New bugs were created in this process, because the pacing of the game dramatically changed with the inclusion of DOM. These bugs were commented out.
+
 ### Change Log v 1.32
 
 	* Organization of elements within guessing_game.js
@@ -13,7 +18,7 @@ _Test your working knowledge of various programming languages and their uses!_
   * Added structure to the index.html, while incorporating a guessing_game.css for future styling.
 
 ### Version
-1.32
+1.40
 #### Installation
 * Place all files in the same directory.
 * Simply run index.html in your browser
@@ -21,5 +26,5 @@ _Test your working knowledge of various programming languages and their uses!_
 ##### License
 Creative Commons
 ###### Credits
-Claudia, Landon, TeamTreeHouse
+Claudia Cuevas, Landon Bennett, TeamTreeHouse, Will Haeck
 
